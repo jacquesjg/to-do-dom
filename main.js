@@ -11,5 +11,9 @@ addToDoButton.addEventListener('click', function () {
     inputField.value = '';
     paragraph.addEventListener('click', function () {
         paragraph.style.textDecoration = "line-through"
-    })
-})
+    });
+});
+
+// new buttons need to setup up
+let removeCompletedButton = document.querySelector('#removeCompleted');
+let removeAllButton = document.querySelector('#removeAll');
