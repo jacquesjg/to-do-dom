@@ -17,3 +17,22 @@ addToDoButton.addEventListener('click', function () {
 // new buttons need to setup up
 let removeCompletedButton = document.querySelector('#removeCompleted');
 let removeAllButton = document.querySelector('#removeAll');
+
+// remove completed tasks function
+
+removeCompletedButton.addEventListener('click', function () {
+    for (const item of toDoContainer.children) {
+        if (item.style.textDecoration === "line-through") {
+            toDoContainer.removeChild(item);
+        }
+    }
+})
+
+
+// remove all button
+removeAllButton.addEventListener('click', function () {
+    for (const item of toDoContainer.children) {
+        toDoContainer.removeChild(item);
+    }
+
+})
